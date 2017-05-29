@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1574ce8259b4ec89b59571747353924",
+    "_text_": "إعتماد",
+    "_top_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "44%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sd7d7607f8834de284ad3c771233e2c7",
+    "id": "paymentOrderDetailsApproveButton",
+    "info": null,
+    "isvisible": true,
+    "kuid": "h1fdd17595914fcb8b6f3df571df9c5b",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_ife5e09af6fa4fccbfaccaf8d81bcd6c",
+    "parent": "bottomCont",
+    "pf": "paymentOrderDetailsForm",
+    "texti18n": "Approve",
+    "wType": "Button",
+    "zindex": 1
+}

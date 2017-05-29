@@ -1,0 +1,24 @@
+{
+    "AS_Form_fad7019a498f42a79458c29d49d9099d": {
+        "id": "AS_Form_fad7019a498f42a79458c29d49d9099d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "paymentOrderDetailsForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c603beeeed9340d7adfe1df7bc667827"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c8aed3afdfd64e7c844cd50abc84b1ea",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "paymentOrderDetailsForm.mainPageCont.right = \"0%\";\nswipe();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

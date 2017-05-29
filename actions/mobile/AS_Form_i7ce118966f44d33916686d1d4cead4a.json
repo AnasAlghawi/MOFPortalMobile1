@@ -1,0 +1,27 @@
+{
+    "AS_Form_i7ce118966f44d33916686d1d4cead4a": {
+        "id": "AS_Form_i7ce118966f44d33916686d1d4cead4a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "paymentOrderDetailsForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c603beeeed9340d7adfe1df7bc667827"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___g24665d86f1a4474a8c6e44feb9bcf61",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "initPaymentOrderDetailsForm",
+            "display": "initPaymentOrderDetailsForm",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

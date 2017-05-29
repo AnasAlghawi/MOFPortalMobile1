@@ -1,0 +1,14 @@
+"Login"="دخول";
+"UserName"="إسم المستخدم";
+"Password"="كلمة المرور";
+"PaymentsOrdersHeaderLabel"="أوامر الدفع";
+"PaymentsOrderDetailsDate"=":التاريخ";
+"PaymentsOrderDetailsYear"=":السنة المالية";
+"PaymentsOrderDetailsPaymentMethod"="طريقة التحويل";
+"PaymentsOrderDetailsBeneficiaryName"="إسم المستفيد";
+"PaymentsOrderDetailsAlternativeBeneficiaryName"="إسم المستفيد البديل";
+"PaymentsOrderDetailsIBAN"="رقم حساب البنك";
+"Approve"="إعتماد";
+"Reject"="إرجاع";
+"PaymentsOrderDetailCurrency"="العملة";
+"PaymentsOrderDetailsBenfNum"="رقم المستفيد";

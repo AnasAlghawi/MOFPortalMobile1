@@ -1,0 +1,21 @@
+{
+    "AS_Button_ife5e09af6fa4fccbfaccaf8d81bcd6c": {
+        "id": "AS_Button_ife5e09af6fa4fccbfaccaf8d81bcd6c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d8b737cd15f74b1592b50f3f026458a5",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "approvePaymentOrder",
+            "display": "approvePaymentOrder",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_skin_": "se664847d97948eda06868832c568e64",
+    "_text_": "إرجاع",
+    "_top_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "44%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "se45a37244e744b9a636e7c6ca51467f",
+    "id": "paymentOrderDetailsCancelButton",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d5c944a0d80a439da83aecbc7ee5671a",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_d85f638587ed4e34a1b064f6785f9ca1",
+    "parent": "bottomCont",
+    "pf": "paymentOrderDetailsForm",
+    "texti18n": "Reject",
+    "wType": "Button",
+    "zindex": 1
+}

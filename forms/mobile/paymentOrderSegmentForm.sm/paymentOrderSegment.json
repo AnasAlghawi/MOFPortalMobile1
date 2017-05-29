@@ -1,0 +1,109 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "paymentOrderSegmentLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "disabledSkins": {
+        "alternateRowSkin": "sf2b556935b24673a23e098e20861885",
+        "widgetSkin": "sd3926fc95e4431db873a73154b3b5cb"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "ef82f9fb7b1841d8bab76df785549a35",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "paymentOrderSegment",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "i32437a5809d43d986513002b55d40a1",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "onrowclick": "AS_Segment_bded7951c17149138eeacff53d670811",
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "segmentCont",
+    "pf": "paymentOrderSegmentForm",
+    "retainselection": false,
+    "rowTemplateId": "d58ef709b396483283678fe38d69f998",
+    "rowcounter": 0,
+    "rowfocusskin": "sfc8fe68a48c44e08cbf257623ec1a83",
+    "rowskin": "s16c152b5c4042c4a55147bc4f765c73",
+    "rowtemplate": "labelCont",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sadec3e634664c2aac57c59f1a5d646b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": true,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CopylabelCont0ib7a56491bbe48": "CopylabelCont0ib7a56491bbe48",
+        "labelCont": "labelCont",
+        "paymentOrderSegmentLabel": "paymentOrderSegmentLabel"
+    },
+    "zindex": 1
+}

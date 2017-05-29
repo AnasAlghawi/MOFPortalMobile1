@@ -1,0 +1,59 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sed96ec6181e46ba987fc7bb65190eae",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "paymentOrderSegmentLabel"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "focusskin": "s24af96e779c490cae3d647f8d057eea",
+    "id": "CopylabelCont0ib7a56491bbe48",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "d531befa8a844a5c8dd782c77c8689cf",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "labelCont",
+    "pf": "paymentOrderSegmentRow",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 5
+}

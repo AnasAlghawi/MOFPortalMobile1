@@ -1,0 +1,60 @@
+{
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "220dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sd83d4cfd8fe4d768fb399d7dd616c49",
+    "_top_": {
+        "type": "string",
+        "value": "181dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "userNameCont",
+        "passwordCont",
+        "buttonCont"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "loginDataCont",
+    "info": null,
+    "isvisible": true,
+    "kuid": "be83d9bfbd604c08adc00d1a9365eb31",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "bodyCont",
+    "pf": "loginForm",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "vizProps": {},
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

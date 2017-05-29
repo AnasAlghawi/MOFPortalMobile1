@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "s494fe2316714b63b04f1ef41d624b60",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s65c27f1f02943c3bd3658116b7e5dca",
+    "id": "paymentOrderDetailsFormHeaderMenuButton",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e9acaace781a4d09aed6d72d8493ffaa",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_be9cc1e5878c42d5ad05a621ea867478",
+    "parent": "paymentOrderDetailsFormHeaderMenuButtonCont",
+    "pf": "paymentOrderDetailsForm",
+    "wType": "Button",
+    "zindex": 1
+}

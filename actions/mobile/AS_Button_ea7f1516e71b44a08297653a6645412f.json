@@ -1,0 +1,26 @@
+{
+    "AS_Button_ea7f1516e71b44a08297653a6645412f": {
+        "id": "AS_Button_ea7f1516e71b44a08297653a6645412f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyLoginFrom",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a3b7904575504b14af3ea936c4b3a376"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__onClick_f83e63b8e5794d1fa2eee27bb782ccb9",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "validateUser",
+            "display": "validateUser",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

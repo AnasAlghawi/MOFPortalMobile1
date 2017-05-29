@@ -1,0 +1,17 @@
+{
+    "AS_Button_ee33933025f6447eb517577649992c5a": {
+        "id": "AS_Button_ee33933025f6447eb517577649992c5a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_onClick_d3e1511f282840f381ba797c1c2447b4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "slideMenu(paymentOrderDetailsForm.mainM);",
+            "callbackType": null
+        }]
+    }
+}

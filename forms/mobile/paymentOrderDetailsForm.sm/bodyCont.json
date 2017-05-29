@@ -1,0 +1,84 @@
+{
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s999eed92c434bd5a5358206ea399575",
+    "_top_": {
+        "type": "string",
+        "value": "10.00%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "paymentOrderDetailsDateCont",
+        "paymentOrderDetailsYearCont",
+        "paymentOrderDetailsPaymentMethodCont",
+        "paymentOrderDetailsBenefNameCont",
+        "paymentOrderDetailsBenefName1Cont",
+        "paymentOrderDetailsIBANCont",
+        "paymentOrderDetailsCurrencyCont",
+        "paymentOrderDetailsBenefNumCont",
+        "paymentOrderDetailsAmountCont",
+        "paymentOrderDetailsAmountWordCont",
+        "paymentOrderDetailsEntityNameCont",
+        "paymentOrderDetailsDeptNameCont",
+        "paymentOrderDetailsSectionNameCont",
+        "paymentOrderDetailsPaymentOrderNumCont",
+        "paymentOrderDetailsProirityCont",
+        "paymentOrderDetailsRemarkCont",
+        "FlexContainer0j8bdb25332fe4c"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "bodyCont",
+    "info": null,
+    "isvisible": true,
+    "kuid": "efeb9cd411e94b04be4698508b2b7f74",
+    "layouttype": 2,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "mainPageCont",
+    "pf": "paymentOrderDetailsForm",
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "vizProps": {},
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}
