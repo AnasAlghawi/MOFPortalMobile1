@@ -1,16 +1,110 @@
 var paymentOrderReq;
 
+
+function rejectReasonCheck(){
+ 
+  
+  function rejectAlertHandler(alertResponse)
+                                {     
+                                    if(alertResponse == true){                                       
+                                        rejectPaymentOrder();
+                                    } 
+                                 
+ 
+                                }
+    
+  var remarkTextBox = paymentOrderDetailsForm.paymentOrderDetailsInputRemarkLabelTextArea.text;
+  if(remarkTextBox !== null && remarkTextBox !== " " ){
+    
+    var basicConf = {message: "هل أنت متأكد من إرجاع الإعتماد",alertType: constants.
+                        ALERT_TYPE_CONFIRMATION,alertTitle: "تأكيد الإرجاع",yesLabel:"نعم",
+                        noLabel: "لا", alertHandler: rejectAlertHandler};
+    
+    var pspConf = {}; 
+    var infoAlert = kony.ui.Alert(basicConf,pspConf);
+    
+        rejectPaymentOrder();
+    
+    
+  
+    
+    
+    
+  }
+  else{
+    alert("الرجاء إدخال سبب الرفض");
+  }
+  
+  
+  // paymentOrderDetailsForm.paymentOrderDetailsDateLabelText.setVisibility(false);
+  
+  
+}
+
+
+
 function approvePaymentOrder(){
   
+  var id = getJSONValueByJSONAttributeName("Id");
    request= new kony.net.HttpRequest();
    paymentOrderReq= request;
    request.onReadyStateChange= approvmentResponse;     
-   request.open("PUT",url+"PaymentOrderVO/8");
+   request.open("PUT",url+"PaymentOrderVO/"+id);
    request.setRequestHeader("Content-Type","application/vnd.oracle.adf.resourceitem+json; charset=UTF-8");
   
   var newPaymentOrderStatus = changeStatusApprovment();
-  update = newValues(newPaymentOrderStatus);
+  var newRemark = getJSONValueByJSONAttributeName("Remark");
+  var newAmount = getJSONValueByJSONAttributeName("Amount");
+  var newBeneficaryNum = getJSONValueByJSONAttributeName("BeneficaryCode");
+  var newPriority = getJSONValueByJSONAttributeName("Priority");
+  var userPriv = kony.store.getItem("userPriv");
+  
+  if(userPriv == "rev"){
+        var currentAmount = paymentOrderDetailsForm.paymentOrderDetailsAmountLabel.text;
+        var currentBeneficaryNum = paymentOrderDetailsForm.paymentOrderDetailsBenefNumLabel.text;    
+        newAmount = paymentOrderDetailsForm.paymentOrderDetailsAmountInputContTexBox.text;
+        newBeneficaryNum = paymentOrderDetailsForm.paymentOrderDetailsBenefNumInputTextBox.text;
+    
+        if(currentAmount == newAmount && currentBeneficaryNum == newBeneficaryNum ){
+            
+         update = newValues(newPaymentOrderStatus,newRemark,newAmount,newBeneficaryNum,newPriority);
+         request.send(update);
+        }
+        else{
+            alert("المبلغ أو رقم المستفيد غير صحيح");
+        }
+    
+  }
+  
+  else if(userPriv == "mof"){
+     newAmount = getJSONValueByJSONAttributeName("Amount");
+     newBeneficaryNum = getJSONValueByJSONAttributeName("BeneficaryCode");
+     newPriority = paymentOrderDetailsForm.paymentOrderDetailsProirityInputContlTextbox.text;
+     if(newPriority !== null && newPriority !==" " ){
+       
+       
+           update = newValues(newPaymentOrderStatus,newRemark,newAmount,newBeneficaryNum,newPriority);
+           request.send(update);  
+       //alert('Priority not null');
+     }
+     else{
+         alert("الرجاء إدخال الأولوية");
+    }
+    
+  }
+  
+  else {
+     
+    
+    
+  update = newValues(newPaymentOrderStatus,newRemark,newAmount,newBeneficaryNum,newPriority);
   request.send(update);
+  }
+  
+  
+  
+  
+  
 
 }
 
@@ -24,7 +118,9 @@ function rejectPaymentOrder(){
    request.open("PUT",url+"PaymentOrderVO/8");
    request.setRequestHeader("Content-Type","application/vnd.oracle.adf.resourceitem+json; charset=UTF-8");
  
-  update = newValues(0);
+  var newRemark = paymentOrderDetailsForm.paymentOrderDetailsInputRemarkLabelTextArea.text;
+  update = newValues(0,newRemark);
+  //alert(update);
   request.send(update);
 
   
@@ -43,20 +139,25 @@ function getJSONValueByJSONAttributeName (attributeName){
 
 
 
-function newValues(paymentOrderStatus){
+function newValues(paymentOrderStatus,remark,amount,beneficaryNum,priority){
     
   var newPaymentOrderStatus = paymentOrderStatus;
-
+  var newRemark = remark;
+  var newAmount = amount;
+  var newBeneficaryNum = beneficaryNum;
+  var newPriority = priority;
+  
+  
   var id = getJSONValueByJSONAttributeName("Id");
-  var amount = getJSONValueByJSONAttributeName("Amount");
+ // var amount = getJSONValueByJSONAttributeName("Amount");
   var beneficaryName = getJSONValueByJSONAttributeName("BeneficaryName");
   var beneficaryNameAr = getJSONValueByJSONAttributeName("BeneficaryNameAr");
   var paymentOrderDateH = getJSONValueByJSONAttributeName("PaymentOrderDateH");
   var paymentOrderNumber = getJSONValueByJSONAttributeName("PaymentOrderNumber");
-  var remark = getJSONValueByJSONAttributeName("Remark");
+ // var remark = getJSONValueByJSONAttributeName("Remark");
   var iban = getJSONValueByJSONAttributeName("Iban");
   var amountInWord = getJSONValueByJSONAttributeName("AmountInWord");
-  var beneficaryCode = getJSONValueByJSONAttributeName("BeneficaryCode");
+ // var beneficaryCode = getJSONValueByJSONAttributeName("BeneficaryCode");
   var currencyName = getJSONValueByJSONAttributeName("CurrencyName");
   var entityName = getJSONValueByJSONAttributeName("EntityName");
   var deptName = getJSONValueByJSONAttributeName("DeptName");
@@ -65,22 +166,31 @@ function newValues(paymentOrderStatus){
   var paymentMethod = getJSONValueByJSONAttributeName("PaymentMethod");
 //   var paymentOrderStatus = json['items'][selectedRow]["PaymentOrderStatus"];
   var paymentOrderYear = getJSONValueByJSONAttributeName("PaymentOrderYear");
-  var priority = getJSONValueByJSONAttributeName("Priority");
+ // var priority = getJSONValueByJSONAttributeName("Priority");
   
     
+  
+//     var jsonObj= JSON.parse(paymentOrderListRequest.responseText);
+//   var selectedIndex =paymentOrderSegmentForm.paymentOrderSegment.selectedRowIndex;
+//   var selectedRow = selectedIndex[1];
+//   var jsonValue = jsonObj['items'][selectedRow];
+  
+//   jsonValue["PaymentOrderStatus"]=newPaymentOrderStatus;
+  
+  
   
   var update=
       {
         "Id": id,
-        "Amount": amount,
+        "Amount": newAmount,
         "BeneficaryName": beneficaryName,
         "BeneficaryNameAr":beneficaryNameAr,
         "PaymentOrderDateH": paymentOrderDateH,
         "PaymentOrderNumber":paymentOrderNumber,
-        "Remark":remark ,
+        "Remark":newRemark ,
         "Iban": iban,
         "AmountInWord": amountInWord,
-        "BeneficaryCode": beneficaryCode,
+        "BeneficaryCode": newBeneficaryNum,
         "CurrencyName": currencyName,
         "EntityName": entityName,
         "DeptName": deptName,
@@ -89,7 +199,7 @@ function newValues(paymentOrderStatus){
         "PaymentMethod": paymentMethod,
         "PaymentOrderStatus": newPaymentOrderStatus,
         "PaymentOrderYear": paymentOrderYear,
-        "Priority": priority,
+        "Priority": newPriority,
         "links": [
           {
             "rel": "self",
@@ -106,7 +216,8 @@ function newValues(paymentOrderStatus){
         ]
       };
     
-   return update;
+//    return jsonValue;
+      return update;
 }
 
 
@@ -140,7 +251,8 @@ function approvmentResponse(){
   
    if(paymentOrderReq.readyState == 4){
  		alert(paymentOrderReq.responseText);
-      userLogin();
+        userLogin();
+//         paymentOrderDetailsForm.paymentOrderDetailsInputRemarkLabelTextArea.text = null;
   }
 }
 

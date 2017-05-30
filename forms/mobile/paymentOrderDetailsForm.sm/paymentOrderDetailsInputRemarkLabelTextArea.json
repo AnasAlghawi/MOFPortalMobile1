@@ -1,0 +1,70 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextArea2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "107dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_padding_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_placeholder_": "الرجاء إدخال سبب الرفض",
+    "_skin_": "s220f7bf502f446fa94b3997f336c44b",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "33dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "333dp"
+    },
+    "android": {
+        "psp": {
+            "placeholderSkin": "sb2eda5537a04fcb9b1b2c97a76958d6"
+        }
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "closebuttontext": "",
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 3,
+    "id": "paymentOrderDetailsInputRemarkLabelTextArea",
+    "info": null,
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "dd9d03ef6207432ca08ed01b2abe5664",
+    "mode": "A",
+    "name": "kony.ui.TextArea2",
+    "numberofvisiblelines": 3,
+    "parent": "paymentOrderDetailsInputRemarkCont",
+    "pf": "paymentOrderDetailsForm",
+    "placeholderskin": "sb2eda5537a04fcb9b1b2c97a76958d6",
+    "securetextentry": false,
+    "showoprogressindicator": false,
+    "showprogressindicator": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextArea",
+    "zindex": 1
+}

@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "26dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "170dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "s56817c939374603927fa2d08fd9e4c8",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "187dp"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "paymentOrderDetailsBenefNumInputTextBox",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "fee075852e14496fb5830541f7595607",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "paymentOrderDetailsBenefNumInputCont",
+    "pf": "paymentOrderDetailsForm",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

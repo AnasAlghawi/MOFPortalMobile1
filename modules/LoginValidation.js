@@ -2,10 +2,11 @@
 
 var loginPass;
 var userLoginRequest;
+// var userPriv;
 
 
 const CONTENT_TYPE = "application/vnd.oracle.adf.resourceitem+json" ;
-const ipAddress = "192.168.8.103";
+const ipAddress = "192.168.100.13";
 const url = "http://"+ipAddress+":7101/MOFMobile-RESTWebService-context-root/rest/v1/"
 function userLogin(){
 
@@ -53,8 +54,10 @@ function userLoginCallBack(){
       var name= json['items'][i]['Username'];
       var password	= json['items'][i]['Password'];
       var priv = json['items'][i]['Priv'];
-
-
+      
+      
+      kony.store.setItem("userPriv",json['items'][i]['Priv']);
+     
       userLoginPriv(priv);
 
     }

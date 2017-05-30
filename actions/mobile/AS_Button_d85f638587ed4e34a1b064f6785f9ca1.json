@@ -16,8 +16,8 @@
         "actions": [{
             "id": "INVOKE_FUNCTION___db3e857993bc4b04aaa1da28873e398d",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "rejectPaymentOrder",
-            "display": "rejectPaymentOrder",
+            "sequenceKUID": "rejectReasonCheck",
+            "display": "rejectReasonCheck",
             "inputparams": [],
             "parentId": null,
             "callbackType": null,

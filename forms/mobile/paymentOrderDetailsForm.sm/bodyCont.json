@@ -55,7 +55,10 @@
         "paymentOrderDetailsPaymentOrderNumCont",
         "paymentOrderDetailsProirityCont",
         "paymentOrderDetailsRemarkCont",
-        "FlexContainer0j8bdb25332fe4c"
+        "paymentOrderDetailsInputRemarkCont",
+        "paymentOrderDetailsBenefNumInputCont",
+        "paymentOrderDetailsAmountInputCont",
+        "paymentOrderDetailsProirityInputCont"
     ],
     "clipbounds": true,
     "containerweight": 100,

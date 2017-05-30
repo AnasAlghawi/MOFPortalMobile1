@@ -205,5 +205,6 @@
     "iphonewebshrtcutkey": "",
     "applogokey": "",
     "isI18nConfigEnabled": true,
-    "defaultlocalekey": "ar"
+    "defaultlocalekey": "ar",
+    "desktopstartupformkey": "Form0a8431c1afb594a"
 }

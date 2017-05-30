@@ -1,9 +1,10 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "220dp"
+        "value": "60dp"
     },
     "_left_": {
         "type": "string",
@@ -23,25 +24,29 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sdd4b6f535fe403696213fa9d4cb0e3c",
+    "_skin_": "s645cf11159b4eb2be2ff940e8282418",
     "_top_": {
         "type": "string",
-        "value": "78dp"
+        "value": "535dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
+    "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "paymentOrderDetailsAmountInputContLabelText",
+        "paymentOrderDetailsAmountInputContTexBox"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlexContainer0j8bdb25332fe4c",
+    "id": "paymentOrderDetailsAmountInputCont",
     "info": null,
     "isvisible": false,
-    "kuid": "gd46befaba6042c49df5056ee3d51c77",
+    "kuid": "f436a138300b4ac290b153e15d21dd5b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "bodyCont",
